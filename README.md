@@ -1,7 +1,8 @@
 <h1>cardinal-docker</h1>
 
 <h3>Summary</h3>
-`cardinal-docker` is the official implementation of Cardinal inside a containerized environment. `cardinal-docker` 
+
+cardinal-docker is the official implementation of Cardinal inside a containerized environment. cardinal-docker 
 leverages `docker-compose` in order to create a pod-like deployment of Cardinal. NGINX/uWSGI/Cardinal services operate
 in one container, while MariaDB operates in another.
 
@@ -14,9 +15,9 @@ are no volume bindings that allow MariaDB to save outside the environment. If yo
 please look into volume bindings with `docker-compose`. You can reference this [link](https://docs.docker.com/storage/volumes/) for more
 information.
 
-<h3>Running Cardinal with `docker-compose`</h3>
+<h3>Running Cardinal with Docker</h3>
 
-Before running Cardinal, please make sure Docker and docker-compose are installed on the host system. For more information on installing Docker, 
+Before running Cardinal, please make sure Docker and `docker-compose` are installed on the host system. For more information on installing Docker, 
 please reference this [link](https://docs.docker.com/install/).
 
 Once you have `docker-compose` installed, running Cardinal is as simple as running the following from the root directory:
