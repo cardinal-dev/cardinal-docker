@@ -39,9 +39,6 @@ RUN python3 -m venv /opt/venv/cardinal
 RUN /opt/venv/cardinal/bin/python -m pip install -U pip
 RUN /opt/venv/cardinal/bin/python -m pip install -r /opt/Cardinal/requirements.txt
 
-# Build scout
-RUN cd /opt/Cardinal/lib && /opt/venv/cardinal/bin/python -m pip install .
-
 # Environment variables
 ENV CARDINALCONFIG=/home/cardinal.ini
 
